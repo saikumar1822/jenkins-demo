@@ -11,6 +11,7 @@ class JenkinsDemoApplicationTests {
 	@Test
 	void contextLoads() {
 		logger.info("test executing*******************");
+		logger.info("test executing*******************222222222");
 	}
 
 }
