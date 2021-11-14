@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class JenkinsDemoApplication {
@@ -12,5 +13,12 @@ public class JenkinsDemoApplication {
 		logger.info("********************* IN main class********************");
 		SpringApplication.run(JenkinsDemoApplication.class, args);
 	}
+	
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "wel come to jenkins";
+	}
+	
+	
 
 }
